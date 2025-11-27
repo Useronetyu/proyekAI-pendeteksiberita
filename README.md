@@ -40,6 +40,9 @@ This project is built with:
 2.  **Evidence-Based**: Displays the confidence score of the prediction (e.g., 98.9% probability).
 3.  **Modern UI**: Clean and responsive interface built with Shadcn UI and Tailwind.
 
+### App Screenshot
+<img src="./public/Ai.png" alt="Application Interface Demo" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+
 ## 🚀 How to Run the Project
 
 Follow these steps to run the application locally:
