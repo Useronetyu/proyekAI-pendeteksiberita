@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# VeriNews AI: Fake News Detection System
 
-## Project info
+![Project Status](https://img.shields.io/badge/Status-Prototype-blue)
+![Accuracy](https://img.shields.io/badge/Model_Accuracy-98.9%25-green)
 
-**URL**: https://lovable.dev/projects/32e83184-67f9-4128-bbd7-28f56d6d9720
+**VeriNews AI** is a web application designed to automatically identify fake news (hoaxes) using Natural Language Processing (NLP) and Machine Learning techniques.
 
-## How can I edit this code?
+This project serves as a digital implementation of our research titled *"Utilization of Natural Language Processing (NLP) for Hoax Identification in Online News Articles"* , where we compared classic algorithms to find the most effective solution for hoax detection.
 
-There are several ways of editing your application.
+## 📄 Research Insights
 
-**Use Lovable**
+The spread of disinformation is a critical challenge in the digital era. Our study analyzed the performance of three major classification models using a public dataset from Kaggle labeled as "Hoax" and "Real" .
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/32e83184-67f9-4128-bbd7-28f56d6d9720) and start prompting.
+### Model Performance
+Based on our experimental results, the **Random Forest** algorithm outperformed others, making it the core engine of this detection system .
 
-Changes made via Lovable will be committed automatically to this repo.
+| Model | Accuracy | Precision | Recall | F1-Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Random Forest** | **98.90%** | **99.00%** | **98.80%** | **98.90%** |
+| Naive Bayes | 95.87% | 95.23% | 96.80% | 96.01% |
+| SVM | 92.15% | 91.80% | 92.50% | 92.10% |
 
-**Use your preferred IDE**
+*Data Source: Table 1 of the Research Journal *
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## 🛠️ Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** (Build tool)
+- **TypeScript** (Language)
+- **React** (Frontend Framework)
+- **shadcn-ui** (UI Component Library)
+- **Tailwind CSS** (Styling)
 
-## How can I deploy this project?
+*Note: The underlying logic for the text analysis is based on Python scikit-learn libraries (TF-IDF Vectorizer & Random Forest Classifier) as detailed in the research methodology .*
 
-Simply open [Lovable](https://lovable.dev/projects/32e83184-67f9-4128-bbd7-28f56d6d9720) and click on Share -> Publish.
+## ✨ Key Features
 
-## Can I connect a custom domain to my Lovable project?
+1.  **Instant Analysis**: Input news text to classify it as "Hoax" or "Fact" in real-time.
+2.  **Evidence-Based**: Displays the confidence score of the prediction (e.g., 98.9% probability).
+3.  **Modern UI**: Clean and responsive interface built with Shadcn UI and Tailwind.
 
-Yes, you can!
+## 🚀 How to Run the Project
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Follow these steps to run the application locally:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies
+npm i
+
+# Step 4: Start the development server
+npm run dev
